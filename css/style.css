@@ -413,53 +413,143 @@ section h2 {
 }
 
 /* Pricing Section */
-.pricing-info {
-    max-width: 700px;
-    margin: 0 auto;
+.pricing-seasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
 }
 
-.pricing-note {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #6c757d;
-}
-
-.pricing-table {
+.season-card {
     background-color: var(--background-white);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-hover);
+    transition: transform 0.3s;
 }
 
-.price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    border-bottom: 1px solid var(--border-color);
+.season-card:hover {
+    transform: translateY(-5px);
 }
 
-.price-row:last-child {
-    border-bottom: none;
-}
-
-.price-item {
-    font-size: 1.1rem;
+.summer-season .season-header {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     color: var(--text-dark);
 }
 
-.price-value {
-    font-size: 1.3rem;
+.quiet-season .season-header {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: var(--text-dark);
+}
+
+.season-header {
+    padding: 25px;
+    text-align: center;
+}
+
+.season-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.season-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
     font-weight: 700;
+}
+
+.season-period {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.season-prices {
+    padding: 25px;
+}
+
+.room-price {
+    padding: 20px;
+    background-color: var(--background-light);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room-price:last-child {
+    margin-bottom: 0;
+}
+
+.room-name {
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.price-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.price-detail {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.price-extra {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-style: italic;
+    padding-top: 8px;
+    border-top: 1px solid #dee2e6;
+}
+
+.pricing-info-box {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.pricing-info-box h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.pricing-details {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-details li {
+    padding: 10px 0 10px 30px;
+    color: var(--text-dark);
+    position: relative;
+    line-height: 1.6;
+}
+
+.pricing-details li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .pricing-contact {
     text-align: center;
     margin-top: 30px;
-    font-size: 1.05rem;
-    color: #6c757d;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
 }
 
 /* Therapy Section */
