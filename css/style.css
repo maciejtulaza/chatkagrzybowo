@@ -1028,30 +1028,15 @@ footer {
         padding: 60px 20px;
     }
 
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .rooms-grid,
     .amenities-grid {
         grid-template-columns: 1fr;
     }
 
     .nav-menu li a {
-        padding: 10px 12px;
-        font-size: 0.85rem;
+        padding: 8px 10px;
+        font-size: 0.8rem;
     }
 
-    .header-top .contact-item {
-        font-size: 0.9rem;
-    }
-
-    .header-top .contact-item a {
-        font-size: 0.9rem;
-    }
-
-    .logo-image {
-        height: 45px;
-    }
+    /* Keep mobile header layout from 768px - don't override */
 }
