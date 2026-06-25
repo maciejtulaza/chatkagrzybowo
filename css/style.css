@@ -273,15 +273,252 @@ section h2 {
 
 /* About Section */
 .about {
-    background-color: var(--background-light);
+    background: linear-gradient(to bottom, var(--background-light) 0%, var(--background-white) 100%);
 }
 
-.about p {
-    max-width: 800px;
+.about-hero {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.about-hero h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.about-lead {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.about-content {
     margin: 0 auto;
+}
+
+.about-intro {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.about-rooms-intro {
+    background-color: var(--background-white);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+}
+
+.about-rooms-intro h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-rooms-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.about-rooms-list li {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.about-rooms-intro > p {
+    margin-top: 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #6c757d;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.about-feature {
+    display: flex;
+    gap: 20px;
+    background-color: var(--background-white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-feature:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.feature-text h5 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #6c757d;
+    margin: 0;
+}
+
+.about-closing {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+}
+
+.about-motto {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-tagline {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about-invitation {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: var(--background-white);
+    padding: 80px 20px;
+}
+
+.about-me-content {
+    margin: 0 auto;
+}
+
+.about-me-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 35px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+}
+
+.greeting {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-me-intro p {
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.about-me-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.purpose {
+    font-size: 1.2rem !important;
+    font-style: italic;
+    color: var(--accent-color) !important;
+    margin-top: 20px !important;
+}
+
+.about-me-story {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.story-section {
+    margin-bottom: 35px;
+    padding: 30px;
+    background-color: var(--background-light);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.story-section:last-child {
+    margin-bottom: 0;
+}
+
+.story-section h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.story-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 12px;
+}
+
+.story-section p:last-child {
+    margin-bottom: 0;
+}
+
+.about-me-closing {
     text-align: center;
+    margin-top: 50px;
+    padding: 40px 35px;
+    background: linear-gradient(135deg, rgba(30, 107, 150, 0.05) 0%, rgba(72, 169, 166, 0.05) 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(30, 107, 150, 0.1);
+}
+
+.about-me-closing p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.final-invitation {
+    font-size: 1.2rem !important;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    margin-bottom: 0 !important;
 }
 
 /* Rooms Section */
@@ -1020,6 +1257,14 @@ footer {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-story {
+        grid-template-columns: 1fr;
     }
 }
 
